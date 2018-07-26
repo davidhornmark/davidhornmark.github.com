@@ -42,5 +42,18 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        function testAnim(x) {
+            $('#dhProfilePicture').removeClass().addClass(x + ' animated pulse').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+                $(this).removeClass();
+                $(this).addClass("rounded");
+            });
+        };
+
+        $('#dhProfilePicture').click(function () {
+            testAnim("rounded");
+        });
+    </script>
 </body>
 </html>
