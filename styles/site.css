@@ -2,12 +2,36 @@ h1 {
     font-family: 'Segoe UI Thin' !important;
 }
 
+#mainJumbotron {
+    background-color: #fff;
+}
+
 #contactInfoJumbotron {
     background-color: #e6e6e6;
+}
+
+#dhProfilePicture {
+    max-width: 100%;
+}
+
+.my-4 {
+    border-top-color: lightgray !important;
 }
 
 @media screen and (max-width: 576px) {
     #pageTitle {
         font-size: 2.5rem;
+    }
+
+    #contactInfoJumbotron {
+        background-color: #e6e6e6;
+    }
+
+    .infotext {
+        margin:1rem;
+    }
+
+    #headerDiv {
+        text-align:center;
     }
 }
