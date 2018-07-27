@@ -1,9 +1,15 @@
+.jumbotron {
+    margin-bottom: 0rem !important;
+}
+
 #mainJumbotron {
     background-color: #fff;
+    padding-bottom: 0rem !important;
 }
 
 #contactInfoJumbotron {
     background-color: #e6e6e6;
+    padding: 1rem;
 }
 
 #dhProfilePicture {
@@ -12,6 +18,15 @@
 
 .my-4 {
     border-top-color: lightgray !important;
+}
+
+.alignPaddingRight {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+
+#profilePictureBorder {
+    border-left: 1px solid #d5d5d5;
 }
 
 @media screen and (max-width: 576px) {
@@ -23,11 +38,20 @@
         background-color: #e6e6e6;
     }
 
-    .infotext {
-        margin:1rem;
+    #profilePictureBorder {
+        border-left: none;
     }
 
     #headerDiv {
         text-align:center;
+    }
+
+    .infotext {
+        margin:1rem;
+    }
+
+    .alignPaddingRight {
+        padding-right: 0rem !important;
+        padding-left: 0rem !important;
     }
 }
