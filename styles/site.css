@@ -14,5 +14,11 @@
 }
 
 @media screen and (max-width: 576px) {
-
+    .fadeline {
+        border: none !important;
+        margin-top: -1px !important;
+        height: 1px !important;
+        background: black !important;
+        background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black)) !important;
+    }
 }
