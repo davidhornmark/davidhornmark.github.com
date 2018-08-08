@@ -13,6 +13,31 @@
     background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black)) !important;
 }
 
+.My_Table {
+    height: 125px;
+}
+
+.My_Table TD {
+    text-align: center;
+}
+
+.My_Table TD:not(:last-child) {
+    padding-right: 30px;
+}
+
+.My_Table TD:not(:first-child) {
+    padding-left: 30px;
+    background-size: 2px 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,hsla(0,0%,0%,0)), color-stop(50%,hsla(0,0%,0%,1)), color-stop(100%,hsla(0,0%,0%,0)));
+    background-image: -webkit-linear-gradient(top, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,1) 50%, hsla(0,0%,0%,0) 100%);
+    background-image: -moz-linear-gradient(top, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,1) 50%, hsla(0,0%,0%,0) 100%);
+    background-image: -ms-linear-gradient(top, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,1) 50%, hsla(0,0%,0%,0) 100%);
+    background-image: -o-linear-gradient(top, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,1) 50%, hsla(0,0%,0%,0) 100%);
+    background-image: linear-gradient(to bottom, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,1) 50%, hsla(0,0%,0%,0) 100%);
+}
+
 @media screen and (max-width: 576px) {
 
 }
