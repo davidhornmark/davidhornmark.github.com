@@ -1,57 +1,18 @@
-.jumbotron {
-    margin-bottom: 0rem !important;
+.container {
+    margin-top: 45vh !important;
+    text-align: center !important;
+    font-family: 'Roboto Condensed' !important;
 }
 
-#mainJumbotron {
-    background-color: #fff;
-    padding-bottom: 0rem !important;
-}
-
-#contactInfoJumbotron {
-    background-color: #e6e6e6;
-    padding: 1rem;
-}
-
-#dhProfilePicture {
-    max-width: 100%;
-}
-
-.my-4 {
-    border-top-color: lightgray !important;
-}
-
-.alignPaddingRight {
-    padding-right: 1rem !important;
-    padding-left: 1rem !important;
-}
-
-#profilePictureBorder {
-    border-left: 1px solid #d5d5d5;
+.fadeline {
+    width: 50% !important;
+    border: none !important;
+    margin-top: -1px !important;
+    height: 1px !important;
+    background: black !important;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black)) !important;
 }
 
 @media screen and (max-width: 576px) {
-    #pageTitle {
-        font-size: 2.5rem;
-    }
 
-    #contactInfoJumbotron {
-        background-color: #e6e6e6;
-    }
-
-    #profilePictureBorder {
-        border-left: none;
-    }
-
-    #headerDiv {
-        text-align:center;
-    }
-
-    .infotext {
-        margin:1rem;
-    }
-
-    .alignPaddingRight {
-        padding-right: 0rem !important;
-        padding-left: 0rem !important;
-    }
 }
