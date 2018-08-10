@@ -27,11 +27,11 @@
 
 
 .fadetable TD:not(:last-child) {
-    padding-right: 30px;
+    padding-right: 2rem;
 }
 
 .fadetable TD:not(:first-child) {
-    padding-left: 30px;
+    padding-left: 2rem;
     background-size: 2px 100%;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -43,6 +43,23 @@
     background-image: linear-gradient(to bottom, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,1) 50%, hsla(0,0%,0%,0) 100%);
 }
 
+.profilePicture {
+    height: 250px;
+}
+
 @media screen and (max-width: 576px) {
+    .container {
+        margin-top: 3vh !important;
+        text-align: center !important;
+        font-family: 'Roboto Condensed' !important;
+    }
+
+    .fadeline {
+        width: 100% !important;
+        border: none !important;
+        height: 1px !important;
+        background: black !important;
+        background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black)) !important;
+    }
 
 }
