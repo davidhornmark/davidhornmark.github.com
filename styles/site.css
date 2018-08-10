@@ -7,25 +7,30 @@
 .fadeline {
     width: 50% !important;
     border: none !important;
-    margin-top: -1px !important;
     height: 1px !important;
     background: black !important;
     background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black)) !important;
 }
 
-.My_Table {
+.fadetable {
     height: 125px;
 }
 
-.My_Table TD {
+.fadetable TD {
     text-align: center;
 }
 
-.My_Table TD:not(:last-child) {
+.fadetable td a i {
+    width: 78px !important;
+    height: 87px !important;
+}
+
+
+.fadetable TD:not(:last-child) {
     padding-right: 30px;
 }
 
-.My_Table TD:not(:first-child) {
+.fadetable TD:not(:first-child) {
     padding-left: 30px;
     background-size: 2px 100%;
     background-repeat: no-repeat;
