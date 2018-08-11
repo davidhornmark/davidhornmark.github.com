@@ -228,7 +228,7 @@ td:not(:first-child) {
 
 @media screen and (max-width: 576px) {
     .display-4 {
-        font-size: 1.50rem !important;
+        font-size: 2rem !important;
         font-weight: 500 !important;
     }
     .lead {
