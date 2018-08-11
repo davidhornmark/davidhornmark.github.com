@@ -22,53 +22,80 @@
 <body>
     <div class="container">
         <center>
-            <div style="margin-top:5rem;">
-                <h1 class="display-4" style="margin: 0;">@DavidHörnmark</h1>
-                <span class="lead">International Software Engineering-student</span>
-            </div>
-            <div>
-                <hr class="fadeline" />
-                <table>
-                    <tr>
-                        <td><a href="https://www.linkedin.com/in/david-hörnmark-03424416a/" target="_blank"><i class="fab fa-linkedin fa-5x "></i></a></td>
-                        <td><a href="https://www.facebook.com/davidhornmark" target="_blank"><i class="fab fa-facebook-square fa-5x "></i></a></td>
-                        <td><a href="https://github.com/davidhornmark" target="_blank"><i class="fab fa-github-square fa-5x "></i></a></td>
-                    </tr>
-                </table>
-                <hr class="fadeline" />
-                <table>
-                    <tr>
-                        <td><a href="https://twitter.com/davidhornmark" target="_blank"><i class="fab fa-twitter-square fa-5x "></i><a></td>
-                        <td><a href="https://www.instagram.com/davidhornmark/" target="_blank"><i class="fab fa-instagram fa-5x "></i><a></td>
-                        <td><a href="https://www.youtube.com/channel/UC3jia2znUqH3JTZmDJ9TAGw" target="_blank"><i class="fab fa-youtube-square fa-5x "></i></a></td>
-                    </tr>
-                </table>
-                <hr class="fadeline" />
-                <table>
-                    <tr>
-                        <td><a onclick="$('#snapchatmodal').click();"><i class="fab fa-snapchat-square fa-5x "></i></td>
-                        <td><a><i class="fas fa-envelope-square fa-5x "></i></td>
-                        <td><a><i class="fas fa-phone-square fa-5x "></i></a></td>
-                    </tr>
-                </table>
+            <div style="margin: 0;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+                <div>
+                    <h1 class="display-4 hueTitle" style="margin: 0;">@DavidHörnmark</h1>
+                    <span class="lead">International Software Engineering-student</span>
+                </div>
+                <div>
+                    <hr class="fadeline" />
+                    <table>
+                        <tr>
+                            <td><a href="https://www.linkedin.com/in/david-hörnmark-03424416a/" target="_blank"><i class="fab fa-linkedin fa-5x "></i></a></td>
+                            <td><a href="https://www.facebook.com/davidhornmark" target="_blank"><i class="fab fa-facebook-square fa-5x "></i></a></td>
+                            <td><a href="https://github.com/davidhornmark" target="_blank"><i class="fab fa-github-square fa-5x "></i></a></td>
+                        </tr>
+                    </table>
+                    <hr class="fadeline" />
+                    <table>
+                        <tr>
+                            <td><a href="https://twitter.com/davidhornmark" target="_blank"><i class="fab fa-twitter-square fa-5x "></i><a></td>
+                            <td><a href="https://www.instagram.com/davidhornmark/" target="_blank"><i class="fab fa-instagram fa-5x "></i><a></td>
+                            <td><a href="https://www.youtube.com/channel/UC3jia2znUqH3JTZmDJ9TAGw" target="_blank"><i class="fab fa-youtube-square fa-5x "></i></a></td>
+                        </tr>
+                    </table>
+                    <hr class="fadeline" />
+                    <table>
+                        <tr>
+                            <td><a onclick="$('#snapchatmodalbutton').click();"><i class="fab fa-snapchat-square fa-5x "></i></td>
+                            <td><a onclick="$('#contactmodalbutton').click();"><i class="fas fa-envelope-square fa-5x "></i></td>
+                            <td><a><i class="fas fa-phone-square fa-5x" style="color:white;cursor:default;"></i></a></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </center>
 
+
         <!-- Button trigger modal -->
-        <button type="button" id="snapchatmodal" data-toggle="modal" data-target="#exampleModal" style="display: none;"></button>
+        <button type="button" id="contactmodalbutton" data-toggle="modal" data-target="#contactModal" style="display: none;"></button>
 
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Snapchat QR-Code</h5>
+                        <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <img id="snapchatqr" src="./content/pictures/snapchatQR.png" alt="SNAPCHAT_QR"/>
+                        <p class="lead"><span style="font-weight: bold;">E-Mail:</span> dhornmark@gmail.com</p>
+                        <p class="lead"><span style="font-weight: bold;">Telephone:</span> +46 (0) 730 49 04 81</p>
+                        <center>
+                            <a href="mailto:dhornmark@gmail.com" class="btn btn-block hueBackground"><span class="lead" style="color:white;">Click here to send an e-mail.</span></a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" id="snapchatmodalbutton" data-toggle="modal" data-target="#snapchatModal" style="display: none;"></button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="snapchatModal" tabindex="-1" role="dialog" aria-labelledby="snapchatModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="snapchatModalLabel">Snapchat QR-Code</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="snapchatqr" src="./content/pictures/snapchatQR.png" alt="SNAPCHAT_QR" />
                     </div>
                 </div>
             </div>
