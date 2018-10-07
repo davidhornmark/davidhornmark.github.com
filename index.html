@@ -10,112 +10,19 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
     <link rel="stylesheet" href="./styles/animate.css">
-    <link rel="stylesheet" href="./styles/site.css">
+    <link rel="stylesheet" href="./styles/newsite.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <div class="container">
-        <center>
-            <div style="margin: 0;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); width:95vw;">
-                <div>
-                    <h1 class="display-4 hueTitle" style="margin: 0;">@DavidHörnmark</h1>
-                    <span class="lead">International Software Engineering-student</span>
-                </div>
-                <div>
-                    <hr class="fadeline" />
-                    <table>
-                        <tr>
-                            <td><a href="https://www.linkedin.com/in/david-hörnmark-03424416a/" target="_blank"><i class="fab fa-linkedin fa-5x "></i></a></td>
-                            <td><a href="https://www.facebook.com/davidhornmark" target="_blank"><i class="fab fa-facebook-square fa-5x "></i></a></td>
-                            <td><a href="https://github.com/davidhornmark" target="_blank"><i class="fab fa-github-square fa-5x "></i></a></td>
-                        </tr>
-                    </table>
-                    <hr class="fadeline" />
-                    <table>
-                        <tr>
-                            <td><a href="https://twitter.com/davidhornmark" target="_blank"><i class="fab fa-twitter-square fa-5x "></i><a></td>
-                            <td><a href="https://www.instagram.com/davidhornmark/" target="_blank"><i class="fab fa-instagram fa-5x "></i><a></td>
-                            <td><a href="https://www.youtube.com/channel/UC3jia2znUqH3JTZmDJ9TAGw" target="_blank"><i class="fab fa-youtube-square fa-5x "></i></a></td>
-                        </tr>
-                    </table>
-                    <hr class="fadeline" />
-                    <table>
-                        <tr>
-                            <td><a onclick="$('#snapchatmodalbutton').click();"><i class="fab fa-snapchat-square fa-5x "></i></td>
-                            <td><a onclick="$('#contactmodalbutton').click();"><i class="fas fa-envelope-square fa-5x "></i></td>
-                            <td><a href="./content/Resume.pdf" target="_blank"><i class="fas fa-id-badge fa-5x"></i></a></td>
-                        </tr>
-                    </table>
-                    <br />
-                </div>
-            </div>
-        </center>
+    <nav class="navbar sticky-top navbar-dark bg-dark">
+        <a class="navbar-brand hueTitle" href="#">DAVID HÖRNMARK</a>
+    </nav>
 
-
-        <!-- Button trigger modal -->
-        <button type="button" id="contactmodalbutton" data-toggle="modal" data-target="#contactModal" style="display: none;"></button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p class="lead"><span style="font-weight: bold;">E-Mail:</span> dhornmark [at] gmail.com</p>
-                        <p class="lead"><span style="font-weight: bold;">Telephone:</span> +46 (0) 730 49 04 81</p>
-                        <center>
-                            <a href="mailto:dhornmark@gmail.com" class="btn btn-block hueBackground"><span class="lead" style="color:white;">Click here to send an e-mail.</span></a>
-                        </center>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Button trigger modal -->
-        <button type="button" id="snapchatmodalbutton" data-toggle="modal" data-target="#snapchatModal" style="display: none;"></button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="snapchatModal" tabindex="-1" role="dialog" aria-labelledby="snapchatModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="snapchatModalLabel">Snapchat QR-Code</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img id="snapchatqr" src="./content/pictures/snapchatQR.png" alt="SNAPCHAT_QR" />
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <script>
-        function testAnim(x) {
-            $('#icon').removeClass().addClass(x + ' animated pulse').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-                $(this).removeClass();
-                $(this).addClass(x);
-            });
-        };
-
-        $('#icon').click(function () {
-            testAnim("fas fa-id-card ");
-        });
-    </script>
+    <p>adasdasd</p>
 </body>
-
 </html>
