@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\content",
+    "\\content\\pictures",
     "\\styles"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\styles\\site.css",
   "PreviewInSolutionExplorer": false
 }
