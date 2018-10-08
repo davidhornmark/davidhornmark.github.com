@@ -3,8 +3,9 @@
     "",
     "\\content",
     "\\content\\pictures",
+    "\\inactive",
     "\\styles"
   ],
-  "SelectedNode": "\\styles\\site.css",
+  "SelectedNode": "\\inactive\\indexw.html",
   "PreviewInSolutionExplorer": false
 }
