@@ -7,7 +7,7 @@
 }
 
 .hueBackground {
-    background: -webkit-linear-gradient(92deg,#ffffff,#feab3a);
+    background: -webkit-linear-gradient(92deg,#feab3a,#feab3a);
     -webkit-animation: hue 5s infinite linear;
 }
 
@@ -29,8 +29,25 @@ body {
     font-size: 1.5rem !important;
 }
 
+a {
+    text-decoration: none !important;
+}
+
+footer {
+    display:none !important;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 @media only screen and (max-width: 600px) {
     h4 {
         font-size: 1rem !important;
+    }
+    footer {
+        display: block !important;
+        position: sticky;
+        bottom: 0;
+        width: 100%;
     }
 }
