@@ -1,0 +1,564 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>David H&ouml;rnmark</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- User made CSS -->
+    <link rel="stylesheet" href="./site.css">
+
+    <!-- Template Used -->
+    <!-- https://www.w3schools.com/bootstrap4/trybs_template1.htm -->
+
+    <link rel="icon"
+          type="image/png"
+          href="./icon.png">
+
+</head>
+<body id="pageBody" data-spy="scroll" data-target="#scrollspy" data-offset="1">
+    <nav class="navbar navbar-dark bg-dark justify-content-center" style="font-family: ">
+        <span class="navbar-brand">
+            <img src="./icon.png" alt="Logo" style="width:40px;">
+            <span class="noselect">David H&ouml;rnmark</span>
+        </span>
+    </nav>
+    <div id="scrollspy_container">
+        <ul id="scrollspy" class="nav nav-pills flex-column">
+            <li class="nav-item">
+                <h5>Projects</h5>
+            </li>
+            <li class="nav-item border">
+                <a class="nav-link active" href="#AugmentedDogdeball">Augmented Dogdeball</a>
+            </li>
+            <li class="nav-item border">
+                <a class="nav-link" href="#NKTCavedo">NKT Cavedo</a>
+            </li>
+            <li class="nav-item border">
+                <a class="nav-link" href="#ChristianWatering">Christian Watering</a>
+            </li>
+            <li>
+                <a class="btn btn-outline-info btn-block" href="#pageBody"><i class="fas fa-arrow-circle-up"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div id="main-con" class="container">
+        <div class="row">
+            <div class="col-sm-4" id="about-me">
+                <h2>About Me</h2>
+                <img src="./thumb.jpg" alt="Profile Picture" style="max-width: 100%" />
+                <p class="text-justify">
+                    A driven software engineering student, whose passion is to collaborate with people from across the world. Always interested in embarking on new project adventures.
+                    <br />
+                    <br />
+                    My goal is to establish successful long-term relationships towards employer, colleagues and customer. Loyalty and ambition to rise through the ranks are some of my driving forces. I pursue to continuously grow as an individual and creator, through collaboration together with colleges and peers.
+                </p>
+                <h3>Social Links</h3>
+                <p>I would love to hear from you.</p>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-info" href="https://www.linkedin.com/in/davidhornmark/" target="_blank"><span class="spinner-grow spinner-grow-sm"></span> LinkedIn</a>
+                    </li>
+                    <li class="nav-item btn-group">
+                        <a class="nav-link btn btn-outline-primary" href="https://www.facebook.com/davidhornmark" target="_blank">Facebook</a>
+                        <button type="button" class="nav-link btn btn-primary" id="messengermodalbutton" data-toggle="modal" data-target="#messengerModal">Show QR</button>
+                    </li>
+                    <li class="nav-item">
+                        <button style="width:100%;" type="button" id="contactmodalbutton" class="nav-link btn btn-outline-info" data-toggle="modal" data-target="#contactModal">E-Mail & Mobilephone</button>
+                    </li>
+                </ul>
+                <hr class="d-sm-none">
+            </div>
+            <div class="col-sm-8">
+                <h1 class="display-4 text-center" style="font-size:3rem;">Projects</h1>
+                <hr />
+                <div id="AugmentedDogdeball">
+                    <div>
+                        <h2>Augmented Dodgeball with Double Layered Balancing</h2>
+                        <h5>NojimaLab, University of Electro-Communications, Chofu, Tokyo, Japan</h5>
+                        <h6>March, 2019</h6>
+                    </div>
+                    <div class="text-center">
+                        <img class="entry-img" src="./ball_cds.JPG" alt="Ball and CDS" />
+                        <img class="entry-img" src="./AugDodgeKadriPhoto2.jpg" alt="Participants playing" />
+                    </div>
+                    <div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#AugmentedDogdeball_ProjectInformation">
+                                    Project Information
+                                </a>
+                            </div>
+                            <div id="AugmentedDogdeball_ProjectInformation" class="collapse show">
+                                <div class="card-body">
+                                    <p>
+                                        During my time at the University of Electro-Communications, I joined the Nojima Laboratory and the Augmented Dodgeball Project under Assoc. Prof. Takuya Nojima's supervision.
+                                        My role in the team was to upgrade the user interface of the system used by the referees in order to allow for dynamic balancing of the individual players, and to diagnose and implement fixes for the Catch Detection System.
+                                    </p>
+
+                                    <button id="AugmentedDogdeball_ProjectInformation_ReadMore_Button" class="btn btn-primary btn-block" type="button" onclick="document.getElementById('AugmentedDogdeball_ProjectInformation_ReadMore_Button').setAttribute('style', 'display: none;');" data-toggle="collapse" data-target="#AugmentedDogdeball_ProjectInformation_ReadMore_Content">Read more..</button>
+                                    <div id="AugmentedDogdeball_ProjectInformation_ReadMore_Content" class="collapse">
+                                        <p>Augmented Dodgeball was approved for the IEEE VR 2019 Conference in Osaka, 23rd to 27th of March, where the team also performed a demo. Information regarding the demos can be found in the IEEE VR 2019 document in the Links and Files section.</p>
+                                        <p>Further information about the Augmented Dodgeball project can be found on the NojimaLab website and in the Designing Augmented Sports-pdf which are located in the Links and Files section.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#AugmentedDogdeball_Technologies">
+                                    Technologies Used
+                                </a>
+                            </div>
+                            <div id="AugmentedDogdeball_Technologies" class="collapse">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            Hardware
+                                            <ul>
+                                                <li>Apple MacBook Pro 15.6" Mid 2015</li>
+                                                <li>AdaFruit ESP32 Feather</li>
+                                                <li>M5Stack ESP32 Core</li>
+                                                <li>Hall Effect Magnetic Sensor</li>
+                                                <li>Soft Ball</li>
+                                                <li>Magnets</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            Software
+                                            <ul>
+                                                <li>MacOS Mojave</li>
+                                                <li>XCode</li>
+                                                <li>Arduino IDE</li>
+                                                <li>MariaDB</li>
+                                                <li>OpenFrameworks</li>
+                                                <li>
+                                                    Programming in
+                                                    <ul>
+                                                        <li>C</li>
+                                                        <li>C++</li>
+                                                        <li>SQL</li>
+                                                        <li>PHP</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#AugmentedDogdeball_LinksAndFiles">
+                                    Links and Files
+                                </a>
+                            </div>
+                            <div id="AugmentedDogdeball_LinksAndFiles" class="collapse">
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="badge badge-primary" href="http://www.nojilab.org/2016/augmented-dodgeball/" target="_blank"><i class="fas fa-external-link-alt"></i> www.nojilab.org/2016/augmented-dodgeball/</a>
+                                        </li>
+                                        <li>
+                                            <a class="badge badge-success" href="./uec_augdodge_poster.png" target="_blank">
+                                                <i class="far fa-image"></i> Poster for my Research Presentation.png
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="badge badge-info" href="./AugmentedDodgeball_ExtendedAbstract.pdf" target="_blank">
+                                                <i class="fas fa-file-download"></i> Augmented Dodgeball - Extended Abstract.pdf
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="badge badge-info" href="./IEEEVR2019_ResearchDemos.pdf" target="_blank">
+                                                <i class="fas fa-file-download"></i> IEEEVR 2019 OSAKA - Research Demos
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="badge badge-info" href="./NojimaLab_DesigningAugmentedSports.pdf" target="_blank">
+                                                <i class="fas fa-file-download"></i> NojimaLab - Designing Augmented Sports.pdf
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div id="NKTCavedo">
+                    <div>
+                        <h2>Small Team Project - NKT Cavedo</h2>
+                        <h5>PA1416, Blekinge Institue of Technology, Karlskrona, Blekinge, Sweden</h5>
+                        <h6>May, 2018</h6>
+                    </div>
+                    <div class="text-center">
+                        <img class="entry-img" src="./cavedo_2.png" alt="NKT Cavedo" />
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#NKTCavedo_ProjectInformation">
+                                Project Information
+                            </a>
+                        </div>
+                        <div id="NKTCavedo_ProjectInformation" class="collapse show">
+                            <div class="card-body">
+                                <p>
+                                    The goal of the Cavedo project was to create a deeper Proof of Concept of a digital archive for NKT’s testing protocols used in the testing of their high voltage cables.
+                                    Previously the user had to manually fill in a paper protocol, later an Excel spreadsheet for internal storage of the data, and finally a Word document which served as a test protocol that the customer received.
+                                </p>
+                                <p>
+                                    By storing the test results in a database and automatically extract them when needed, Cavedo provided a streamlined way of collecting data, creating protocols for the customer and the internal system. This approach lowered the number of times a user had to input the same data, from three times to one and thus minimizing the risk of human error.
+                                </p>
+                                <button id="NKTCavedo_ProjectInformation_ReadMore_Button" class="btn btn-primary btn-block" type="button" onclick="document.getElementById('NKTCavedo_ProjectInformation_ReadMore_Button').setAttribute('style', 'display: none;');" data-toggle="collapse" data-target="#NKTCavedo_ProjectInformation_ReadMore_Content">Read more..</button>
+                                <div id="NKTCavedo_ProjectInformation_ReadMore_Content" class="collapse">
+                                    <p>
+                                        Cavedo was built as an internal website located at a local server which had the advantage of only needing one installation. By using responsive design, we allowed for the system to be used across a vast variety of devices as NKT had the idea of providing tablets for the employees. This made it so that wherever the employee was they would have access to all the reports and data and never have to print it out once, this being efficient and environment friendly.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#NKTCavedo_Technologies">
+                                Technologies Used
+                            </a>
+                        </div>
+                        <div id="NKTCavedo_Technologies" class="collapse">
+                            <div class="card-body">
+                                <ul>
+                                    <li>
+                                        Software
+                                        <ul>
+                                            <li>
+                                                Linux Mint
+                                            </li>
+                                            <li>
+                                                Windows 10
+                                            </li>
+                                            <li>
+                                                Visual Studio 2016
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Version Handling
+                                        <ul>
+                                            <li>
+                                                GIT
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Model-View-Controller System Architecture
+                                        <ul>
+                                            <li>
+                                                Model
+                                                <ul>
+                                                    <li>
+                                                        Microsoft SQL Server 2016
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                View
+                                                <ul>
+                                                    <li>
+                                                        ASP.NET
+                                                    </li>
+                                                    <li>
+                                                        C Sharp (C#)
+                                                    </li>
+                                                    <li>
+                                                        HyperText Markup Language (HTML)
+                                                    </li>
+                                                    <li>
+                                                        Cascading Style Sheets (CSS)
+                                                    </li>
+                                                    <li>
+                                                        JavaScript
+                                                    </li>
+                                                    <li>
+                                                        Asynchronous JavaScript and XML (AJAX)
+                                                    </li>
+                                                    <li>
+                                                        jQuery
+                                                    </li>
+                                                    <li>
+                                                        Bootstrap 3
+                                                    </li>
+                                                    <li>
+                                                        Razor Views
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Controller
+                                                <ul>
+                                                    <li>
+                                                        ASP.NET
+                                                    </li>
+                                                    <li>
+                                                        C Sharp (C#)
+                                                    </li>
+                                                    <li>
+                                                        Entity Framework 6
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#NKTCavedo_LinksAndFiles">
+                                Links and Files
+                            </a>
+                        </div>
+                        <div id="NKTCavedo_LinksAndFiles" class="collapse">
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a class="badge badge-info" href="./kursplan-PA1416.pdf" target="_blank"><i class="fas fa-file-download"></i> Course Plan PA1416.pdf</a>
+                                    </li>
+                                    <li>
+                                        <a class="badge badge-info" href="./NKT Cavedo - Presentation.pdf" target="_blank"><i class="fas fa-file-download"></i> NKT Cavedo - Presentation.pdf</a>
+                                    </li>
+                                    <li>
+                                        <a class="badge badge-info" href="./david-hornmark_nkt-cavedo_report.pdf" target="_blank"><i class="fas fa-file-download"></i> Individual Conclusion Report.pdf</a>
+                                    </li>
+                                    <li>
+                                        <a class="badge badge-info" href="./bltcavedo.pdf" target="_blank"><i class="fas fa-file-download"></i> News Article in Blekinge Läns Tidning.pdf</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div id="ChristianWatering">
+                    <div>
+                        <h2>Individual Project - Christian Lundmark</h2>
+                        <h5>PA1414, Blekinge Institue of Technology, Karlskrona, Blekinge, Sweden</h5>
+                        <h6>October, 2017</h6>
+                    </div>
+                    <div class="text-center">
+                        <img class="entry-img" src="./ChristianBevattning.png" alt="Christian Watering" />
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#ChristianWatering_ProjectInformation">
+                                Project Information
+                            </a>
+                        </div>
+                        <div id="ChristianWatering_ProjectInformation" class="collapse show">
+                            <div class="card-body">
+                                <p>
+                                    By using environment sensors, the gardening system will actively take decisions based on variables such as moisture, temperature, lighting, and nutrition in the soil.
+                                </p>
+                                <p>
+                                    Connecting these variables to events the greenhouse is one step closer to automation. Measuring the value of the variables allows for dynamic control over watering, blinders, heating, fertilizing, and checking whether windows and doors are open or closed.
+                                </p>
+                                <p>
+                                    The system provides easy access to administrative tools in used for managing sensors and activating functions manually.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#ChristianWatering_Technologies">
+                                Technologies Used
+                            </a>
+                        </div>
+                        <div id="ChristianWatering_Technologies" class="collapse">
+                            <div class="card-body">
+                                <ul>
+                                    <li>
+                                        Hardware
+                                        <ul>
+                                            <li>
+                                                Xiaomi Mi Flora
+                                            </li>
+                                            <li>
+                                                Raspberry Pi 3
+                                            </li>
+                                            <li>
+                                                Relay Switches
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Software
+                                        <ul>
+                                            <li>
+                                                Raspbian
+                                            </li>
+                                            <li>
+                                                Express
+                                            </li>
+                                            <li>
+                                                Node.JS
+                                            </li>
+                                            <li>
+                                                PUG
+                                            </li>
+                                            <li>
+                                                Google Charts
+                                            </li>
+                                            <li>
+                                                MySQL
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#ChristianWatering_LinksAndFiles">
+                                Links and Files
+                            </a>
+                        </div>
+                        <div id="ChristianWatering_LinksAndFiles" class="collapse">
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a class="badge badge-info" href="./kursplan-PA1414.pdf" target="_blank"><i class="fas fa-file-download"></i> Course Plan PA1414.pdf</a>
+                                    </li>
+                                    <li>
+                                        <a class="badge badge-info" href="./David Hornmark - Documentation Wateringsystem.pdf" target="_blank"><i class="fas fa-file-download"></i> David Hornmark - Documentation Wateringsystem.pdf</a>
+                                    </li>
+                                    <li>
+                                        <a class="badge badge-success" href="./christian_demo.mp4" target="_blank"><i class="fas fa-film"></i> Christian Demo.mp4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Welcome Message Modal -->
+        <div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="welcomeModalLabel"><i class="fas fa-exclamation-triangle text-warning"></i> Welcome!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Wow! You got here early, sorry about the mess. </p>
+                        <p> I'm doing my utmost to make the site get into ready-state. Feel free to look around but you might find some unfinished elements.</p>
+                        <p>You can always come back later to view my final result!</p>
+                        <p class="text-muted"> - David H&ouml;rnmark</p>
+                        <button class="btn btn-warning btn-block" type="button" data-dismiss="modal" aria-label="Close">Proceed!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Messenger Modal -->
+        <div class="modal fade" id="messengerModal" tabindex="-1" role="dialog" aria-labelledby="messengerModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="messengerModalLabel">Messenger QR-Code</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="" src="./content/pictures/messenger-qr.png" alt="Messenger QR" style="width:100%;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead"><span style="font-weight: bold;">E-Mail:</span> dhornmark@gmail.com</p>
+                        <p class="lead"><span style="font-weight: bold;">Telephone:</span> +46 (0) 730 49 04 81</p>
+                        <center>
+                            <a href="mailto:dhornmark@gmail.com" class="btn-block hueBackground" style="border-radius: 0.5rem;"><span class="lead" style="color:white;">Click here to send an e-mail.</span></a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="bg-secondary font-italic text-center">
+        <div class="noselect">
+            <span>+46 (0) 730 - 49 04 81</span>
+            <span class="dash">-</span>
+            <span style="display:inline-block;">David Hörnmark</span>
+            <span class="dash">-</span>
+            <a href="mailto:dhornmark@gmail.com">dhornmark@gmail.com</a>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            let con_height = $("#main-con").height();
+            $("#scrollspy_container").height(con_height);
+
+            $("img").addClass("rounded-sm");
+            $("img").attr("draggable", false);
+            //$("#welcomeModal").modal();
+
+            /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_smooth_scroll_jquery 
+            $("a[href='#pageBody']").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+                    // Store hash
+                    var hash = this.hash;
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                }
+            });
+            */
+        });
+    </script>
+</body>
+</html>
