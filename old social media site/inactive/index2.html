@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>David H&ouml;rnmark</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//code.jquery.com">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/animate.css">
+    <link rel="stylesheet" href="./styles/newsite.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+</head>
+<body id="pageBody" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar sticky-top navbar-dark bg-dark">
+        <a class="navbar-brand hueTitle" href="#pageBody">DAVID HÖRNMARK</a>
+    </nav>
+    <div class="container" style="margin-top:3rem;">
+        <div class="card-deck">
+            <div class="card border-primary">
+                <a href="https://www.linkedin.com/in/david-hörnmark-03424416a/" target="_blank">
+                    <img class="card-img-top" src="./content/pictures/linkedin-logo.png" alt="Linked In Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">David Hörnmark</h5>
+                        <p class="card-text">Here you will find my LinkedIn-page.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card border-primary">
+                <a href="https://www.facebook.com/davidhornmark" target="_blank">
+                    <img class="card-img-top" src="./content/pictures/facebook-logo.png" alt="Facebook Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">@davidhornmark</h5>
+                        <p class="card-text">Here you will find my Facebook-page.</p>
+                    </div>
+                </a>
+                <!-- Button trigger modal -->
+                <button class="btn btn-primary" type="button" id="messengermodalbutton" data-toggle="modal" data-target="#messengerModal">Show Messenger-QR</button>
+            </div>
+            <div class="card border-primary">
+                <a href="https://github.com/davidhornmark" target="_blank">
+                    <img class="card-img-top" src="./content/pictures/github-logo.png" alt="GitHub Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">@davidhornmark</h5>
+                        <p class="card-text">Here you will find my GitHub-page.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br />
+        <div class="card-deck">
+            <div class="card border-primary">
+                <a href="https://twitter.com/davidhornmark" target="_blank">
+                    <img class="card-img-top" src="./content/pictures/twitter-logo.png" alt="Twitter Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">@davidhornmark</h5>
+                        <p class="card-text">Here you will find my Twitter-page.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card border-primary">
+                <a href="https://www.instagram.com/davidhornmark/" target="_blank">
+                    <img class="card-img-top" src="./content/pictures/instagram-logo.png" alt="Instagram Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">@davidhornmark</h5>
+                        <p class="card-text">Here you will find my Instagram-page.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card border-danger">
+                <a href="https://www.youtube.com/channel/UCudyWMHRgXUqNyjV71YGK2w?sub_confirmation=1" target="_blank">
+                    <img class="card-img-top" src="./content/pictures/youtube-logo.png" alt="YouTube Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">David Hörnmark</h5>
+                        <p class="card-text">Here you will find my YouTube-page.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br />
+        <div class="card-deck">
+            <div class="card border-warning" id="snapchat">
+                <a href="#snapchat" onclick="$('#snapchatmodalbutton').click();">
+                    <img class="card-img-top" src="./content/pictures/snapchat-logo.png" alt="Snapchat Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">@dhornmark</h5>
+                        <p class="card-text">Here you will find my Snapchat QR-code.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card border-secondary" id="contact">
+                <a href="#contact" onclick="$('#contactmodalbutton').click();">
+                    <img class="card-img-top" src="./content/pictures/contact-logo.png" alt="Contact Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">Contact Information</h5>
+                        <p class="card-text">Click here to find other ways to contact me.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card border-warning">
+                <a href="./content/Resume.pdf" target="_blank">
+                    <img class="card-img-top" src="./content/pictures/curriculum-vitae-logo.png" alt="CV Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">David Hörnmark's CV</h5>
+                        <p class="card-text">Here you will find my Curriculum Vitae in PDF-form.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" id="contactmodalbutton" data-toggle="modal" data-target="#contactModal" style="display: none;"></button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead"><span style="font-weight: bold;">E-Mail:</span> david [at] hornmark.se</p>
+                        <p class="lead"><span style="font-weight: bold;">Telephone:</span> +46 (0) 730 49 04 81</p>
+                        <center>
+                            <a href="mailto:dhornmark@gmail.com" class="btn-block hueBackground" style="border-radius: 0.5rem;"><span class="lead" style="color:white;">Click here to send an e-mail.</span></a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" id="snapchatmodalbutton" data-toggle="modal" data-target="#snapchatModal" style="display: none;"></button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="snapchatModal" tabindex="-1" role="dialog" aria-labelledby="snapchatModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="snapchatModalLabel">Snapchat QR-Code</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="snapchatqr" src="./content/pictures/snapchat-qr.png" alt="SNAPCHAT_QR" style="width:100%;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="messengerModal" tabindex="-1" role="dialog" aria-labelledby="messengerModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="messengerModalLabel">Messenger QR-Code</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="snapchatqr" src="./content/pictures/messenger-qr.png" alt="SNAPCHAT_QR" style="width:100%;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--<footer class="footer bg-dark text-center" style="cursor:pointer;">
+        <div class="container">
+            <a href='#pageBody'><i class="fas fa-chevron-up fa-2x hueTitle" style="margin-top:0.5rem; margin-bottom:0.5rem;"></i></a>
+        </div>
+    </footer>-->
+
+    <script>
+        $(document).ready(function () {
+            // Initialize Tooltip
+            $('[data-toggle="tooltip"]').tooltip();
+
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#pageBody']").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        })
+    </script>
+
+</body>
+</html>

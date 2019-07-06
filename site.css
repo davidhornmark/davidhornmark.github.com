@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Domine&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hueTitle {
+    /* https://daneden.github.io/animate.css/ */
+	color: #f35626;
+	background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 30s infinite linear;
+}
+
+.hueBackground {
+    /* https://daneden.github.io/animate.css/ */
+    background: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-animation: hue 30s infinite linear;
+}
+
+@-webkit-keyframes hue {
+    /* https://daneden.github.io/animate.css/ */
+	from {
+		-webkit-filter: hue-rotate(0deg);
+	}
+
+	to {
+		-webkit-filter: hue-rotate(-360deg);
+	}
+}
+
+.noselect {
+    /* https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+nav {
+    margin-bottom: 2rem;
+    font-family: 'Domine', serif;
+}
+
+span.navbar-brand {
+    padding: 0;
+    font-size: 2rem;
+    cursor: default;
+    color: white;
+}
+
+@media only screen and (min-width: 1616px) {
+    #scrollspy_container {
+        position: absolute;
+        left: 1rem;
+        top: 5rem;
+    }
+
+    #scrollspy {
+        position: sticky;
+        left: 1rem;
+        top: 1rem;
+        max-width: 220px;
+    }
+}
+@media only screen and (max-width: 1615px) {
+    #scrollspy_container, #scrollspy {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .dash {
+        display:none;
+    }
+}
+
+.entry-img {
+    max-width: 48%;
+    max-height: 183px;
+	margin-bottom: 0.5rem;	
+}
+
+.fakeimg {
+	height: 200px;
+	background: #aaa;
+}
+
+h2, h3, h5, h6 {
+	font-weight: 300 !important;
+}
+
+.nav-item {
+	margin-bottom: 0.5rem;
+}
+
+.badge {
+	margin-bottom: 0.5rem;
+}
+
+footer {
+    position: relative;
+    margin-top: 5rem;
+    min-height: 6rem;
+    color: silver;
+}
+
+footer > div {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer > div > a {
+    color:silver;
+}
+
+footer > div > a:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+.dash {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
