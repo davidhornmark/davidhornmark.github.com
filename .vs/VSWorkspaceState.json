@@ -3,10 +3,8 @@
     "",
     "\\content",
     "\\content\\pictures",
-    "\\inactive",
-    "\\new_version",
-    "\\styles"
+    "\\new_version"
   ],
-  "SelectedNode": "\\new_version\\uec_augdodge_poster.png",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
