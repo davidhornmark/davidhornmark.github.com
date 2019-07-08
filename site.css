@@ -74,8 +74,8 @@ span.navbar-brand {
 }
 
 @media only screen and (max-width: 1024px) {
-    .dash {
-        display:none;
+    #LinkedIn_badge, .dash {
+        display: none;
     }
 }
 
