@@ -26,6 +26,9 @@
     <!-- Template Used -->
     <!-- https://www.w3schools.com/bootstrap4/trybs_template1.htm -->
 
+    <!-- LinkedIn Badge-->
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
     <link rel="icon"
           type="image/png"
           href="./icon.png">
@@ -66,7 +69,7 @@
                     A driven software engineering student, whose passion is to collaborate with people from across the world. Always interested in embarking on new project adventures.
                     <br />
                     <br />
-                    My goal is to establish successful long-term relationships towards employer, colleagues and customer. Loyalty and ambition to rise through the ranks are some of my driving forces. I pursue to continuously grow as an individual and creator, through collaboration together with colleges and peers.
+                    My goal is to establish successful long-term relationships towards employer, colleagues and customer. Loyalty and ambition to rise through the ranks are some of my driving forces. I pursue to continuously grow as an individual and creator, through collaboration together with colleagues and peers.
                 </p>
                 <h3>Social Links</h3>
                 <p>I would love to hear from you.</p>
@@ -82,6 +85,11 @@
                         <button style="width:100%;" type="button" id="contactmodalbutton" class="nav-link btn btn-outline-info" data-toggle="modal" data-target="#contactModal">E-Mail & Mobilephone</button>
                     </li>
                 </ul>
+                <div id="LinkedIn_badge" class="row" style="margin: 0;">
+                    <div class="col-sm-10 offset-sm-1">
+                        <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="sv_SE" data-type="vertical" data-theme="dark" data-vanity="davidhornmark"><a class="LI-simple-link" href='https://se.linkedin.com/in/davidhornmark?trk=profile-badge'>David Hörnmark</a></div>
+                    </div>
+                </div>
                 <hr class="d-sm-none">
             </div>
             <div class="col-sm-8">
@@ -159,6 +167,14 @@
                                                 </li>
                                             </ul>
                                         </li>
+                                        <li>
+                                            Version Handling
+                                            <ul>
+                                                <li>
+                                                    GIT
+                                                </li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -229,7 +245,7 @@
                                 <button id="NKTCavedo_ProjectInformation_ReadMore_Button" class="btn btn-primary btn-block" type="button" onclick="document.getElementById('NKTCavedo_ProjectInformation_ReadMore_Button').setAttribute('style', 'display: none;');" data-toggle="collapse" data-target="#NKTCavedo_ProjectInformation_ReadMore_Content">Read more..</button>
                                 <div id="NKTCavedo_ProjectInformation_ReadMore_Content" class="collapse">
                                     <p>
-                                        Cavedo was built as an internal website located at a local server which had the advantage of only needing one installation. By using responsive design, we allowed for the system to be used across a vast variety of devices as NKT had the idea of providing tablets for the employees. This made it so that wherever the employee was they would have access to all the reports and data and never have to print it out once, this being efficient and environment friendly.
+                                        Cavedo was built as an internal website located at a local server which had the advantage of only needing one installation. By using responsive design, we allowed for the system to be used across a vast variety of devices as NKT had the idea of providing tablets for the employees. This made it so that wherever the employee was they would have access to all the reports and data and never have to print it out once, this being efficient and environment-friendly.
                                     </p>
                                 </div>
                             </div>
@@ -537,7 +553,7 @@
 
             $("img").addClass("rounded-sm");
             $("img").attr("draggable", false);
-            $("#welcomeModal").modal();
+            //$("#welcomeModal").modal();
 
             /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_smooth_scroll_jquery 
             $("a[href='#pageBody']").on('click', function (event) {
