@@ -29,15 +29,16 @@
     <!-- LinkedIn Badge-->
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
+    <!-- Favicon -->
     <link rel="icon"
           type="image/png"
-          href="./content/pictures/icon.png">
+          href="./content/pictures/bw-icon.png">
 
 </head>
 <body id="pageBody" data-spy="scroll" data-target="#scrollspy" data-offset="1">
-    <nav class="navbar navbar-dark bg-dark justify-content-center" style="font-family: ">
+    <nav class="navbar navbar-dark bg-dark justify-content-center">
         <span class="navbar-brand">
-            <img src="./content/pictures/icon.png" alt="Logo" style="width:40px;">
+            <img src="./content/pictures/bw-icon.png" alt="Logo" style="width:40px;">
             <span class="noselect">David H&ouml;rnmark</span>
         </span>
     </nav>
@@ -47,7 +48,10 @@
                 <h5>Projects</h5>
             </li>
             <li class="nav-item border">
-                <a class="nav-link active" href="#AugmentedDogdeball">Augmented Dogdeball</a>
+                <a class="nav-link active" href="#selfnote">Selfnote</a>
+            </li>
+            <li class="nav-item border">
+                <a class="nav-link" href="#AugmentedDogdeball">Augmented Dogdeball</a>
             </li>
             <li class="nav-item border">
                 <a class="nav-link" href="#NKTCavedo">NKT Cavedo</a>
@@ -98,6 +102,115 @@
             <div class="col-sm-8">
                 <h1 class="display-4 text-center" style="font-size:3rem;">Projects</h1>
                 <hr />
+                <div id="selfnote">
+                    <div>
+                        <h2>Mobile Application - Selfnote</h2>
+                        <h5>PA1469, Blekinge Institue of Technology, Karlskrona, Blekinge, Sweden</h5>
+                        <h6>December, 2019</h6>
+                    </div>
+                    <div class="text-center">
+                        <a target="_blank" href="./content/pictures/selfnote-homescreen.PNG">
+                            <img class="entry-img" src="./content/pictures/selfnote-homescreen.PNG" alt="Selfnote Homescreen" />
+                        </a>
+                        <a target="_blank" href="./content/pictures/selfnote-details.PNG">
+                            <img class="entry-img" src="./content/pictures/selfnote-details.PNG" alt="Selfnote Details" />
+                        </a>
+                    </div>
+                    <div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#selfnote_ProjectInformation">
+                                    Project Information
+                                </a>
+                            </div>
+                            <div id="selfnote_ProjectInformation" class="collapse show">
+                                <div class="card-body">
+                                    <p>
+                                        As part of a Mobile Development Course, me and my team developed a mobile reminders application. We wanted to experiment a little and seize the opportunity to expand our reaches, that's why we chose to develop the application using the Flutter framework and Dart programming language. The choice was due to none of us having prior experience with it.
+                                    </p>
+
+                                    <button id="selfnote_ProjectInformation_ReadMore_Button" class="btn btn-primary btn-block" type="button" onclick="document.getElementById('selfnote_ProjectInformation_ReadMore_Button').setAttribute('style', 'display: none;');" data-toggle="collapse" data-target="#selfnote_ProjectInformation_ReadMore_Content">Read more..</button>
+                                    <div id="selfnote_ProjectInformation_ReadMore_Content" class="collapse">
+                                        <p>
+                                            <h2>Idea</h2>
+                                            The application is targeting active mobile users in need of reminders in their daily life.
+                                        </p>
+                                        <p>
+                                            A reminder is only as good as its ability to help you remember, that’s why Selfnote's reminders always will be shown on the lock screen. You cannot miss it, and even if you would miss it Selfnote will notify you when the set time and place is reached.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#selfnote_Technologies">
+                                    Technologies Used
+                                </a>
+                            </div>
+                            <div id="selfnote_Technologies" class="collapse">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            Hardware
+                                            <ul>
+                                                OnePlus 6T
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            Software
+                                            <ul>
+                                                <li>Android Studio v3.5.2</li>
+                                                <li>Flutter</li>
+                                                <li>SQFlite</li>
+                                                <li>
+                                                    Programming in
+                                                    <ul>
+                                                        <li>Dart</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            Version Handling
+                                            <ul>
+                                                <li>
+                                                    GIT
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#selfnote_LinksAndFiles">
+                                    Links and Files
+                                </a>
+                            </div>
+                            <div id="selfnote_LinksAndFiles" class="collapse">
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="badge badge-primary" href="https://github.com/davidhornmark/selfnote" target="_blank"><i class="fas fa-external-link-alt"></i> www.github.com/davidhornmark/selfnote</a>
+                                        </li>
+                                        <li>
+                                            <a class="badge badge-info" href="./content/PDFs/kursplane-PA1469.pdf" target="_blank">
+                                                <i class="fas fa-file-download"></i> Course Plan PA1469.pdf
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="badge badge-success" href="./content/video/selfnote-test_reminder.mp4" target="_blank"><i class="fas fa-film"></i> Test Reminder.mp4</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
                 <div id="AugmentedDogdeball">
                     <div>
                         <h2>Augmented Dodgeball with Double Layered Balancing</h2>
